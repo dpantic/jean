@@ -19,7 +19,11 @@ test:
   timeout: 5000
 
 production:
-  adapter: pg
-  database: db/production.pg
+  adapter: postgresql
+  database: db/production.postgresql
+  encoding: unicode
+  database: create_users
   pool: 5
+  username: dpantic
+  password:
   timeout: 5000
